@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Антицеллюлитный массажер для тела US MEDICA Miami купить в Москве
+    </title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/landing-card.css" />
+    <link rel="stylesheet" type="text/css" href="styles/landing-mobile.css" />
+    <link rel="stylesheet" type="text/css" href="styles/landing.css" />
+  </head>
+
+<div class="landing__page" itemscope itemtype="//schema.org/Product">
+
+    <div class="landing__wrapper">
+        <div class="landing__content">
+            <?= $this->render('../_blocks/_landing_marco_dop_menu'); ?>
+            <section class="landing-card amerigo product-box" data-id="<?= $product->id; ?>">
+                <div class="landing-card__inner container-box">
+                    <?= $this->render('../_blocks/_landing-warranty', [
+                        'product' => $product
+                    ]); ?>
+                    <div class="landing-card__cap-block">
+                        <h1 class="landing-card__caption" itemprop="name">
+                            <span class="per-cat">Массажное кресло</span><br>
+                            <span class="per-dark">Anatomico</span>
+                            <span class="per-orange">Amerigo</span>
+                        </h1>
+                        <meta itemprop="itemCondition" content="Новый"/>
+                    </div>
+                    <div class="landing-card__content">
+                        <div class="landing-card__left">
+                            <div class="prod-img-wrapper">
+                                <img class="prod-img" src="images/landing/screen1_photo.png"
+                                     alt="<?= $product->name; ?>">
+                            </div>
+                            <div class="landing-slider">
+                                <a href="images/landing/1.jpg" data-toggle="lightbox"
+                                   data-gallery="gallery">
+                                    <img class="b-product__img-prev" src="images/landing/1_s.jpg"
+                                         alt="<?= $product->name; ?>">
+                                </a>
+                                <a href="images/landing/2.jpg" data-toggle="lightbox"
+                                   data-gallery="gallery">
+                                    <img class="b-product__img-prev" src="images/landing/2_s.jpg"
+                                         alt="<?= $product->name; ?>">
+                                </a>
+                                <a href="images/landing/3.jpg" data-toggle="lightbox"
+                                   data-gallery="gallery">
+                                    <img class="b-product__img-prev" src="images/landing/3_s.jpg"
+                                         alt="<?= $product->name; ?>">
+                                </a>
+                                <a href="images/landing/4.jpg" data-toggle="lightbox"
+                                   data-gallery="gallery">
+                                    <img class="b-product__img-prev" src="images/landing/4_s.jpg"
+                                         alt="<?= $product->name; ?>">
+                                </a>
+                                <a href="images/landing/5.jpg" data-toggle="lightbox"
+                                   data-gallery="gallery">
+                                    <img class="b-product__img-prev" src="images/landing/5_s.jpg"
+                                         alt="<?= $product->name; ?>">
+                                </a>
+                                <a href="images/landing/6.jpg" data-toggle="lightbox"
+                                   data-gallery="gallery">
+                                    <img class="b-product__img-prev" src="images/landing/6_s.jpg"
+                                         alt="<?= $product->name; ?>">
+                                </a>
+                            </div>
+                            <?php if (isset($product['videos'][0])): ?>
+                                <a class="l-video-link colorbox" href="<?php echo $product['videos'][0]['url']; ?>">
+
+                                </a>
+                            <?php endif; ?>
+                            <?= $this->render('../_blocks/_landing-soc-share', [
+                                'product' => $product
+                            ]); ?>
+                        </div>
+                        <div class="landing-card__right">
+                            <div class="landing-card__stock <?= $product->getAvailableClassnameLanding('quantity_basic_showrooms_summ') ?>">
+                                <span itemprop="availability"><?= $product->getAvailableText('quantity_basic_showrooms_summ') ?></span>
+                            </div>
+                            <div itemprop="offers" itemscope itemtype="//schema.org/Offer">
+                                <?= $this->render('../_blocks/_new-landing_price', [
+                                    'product' => $product,
+                                    'class' => ''
+                                ]); ?>
+                                <div class="landing-card__color-bon">
+                                    <div class="landing-card__colors-block">
+                                        <p class="landing-card__colors-title">Выбрать цвет :</p>
+                                        <ul class="landing-card__colors-wrapper">
+                                            <?php
+                                            $count = 0;
+                                            $images = [
+                                                'images/landing/screen1_photo.png',
+                                                'images/landing/screen1_photo2.png'
+                                            ];
+                                            ?>
+                                            <?php foreach ($product->colors as $variantId => $variant) : ?>
+                                                <li class="colors__item landing-card__color colors__item--color-<?= $variant['variant']['name']; ?><?= $variant['class'] ? ' color-' . $variant['class'] : ''; ?>"
+                                                    data-id="<?= $variant['id']; ?>"
+                                                    data-img="<?= $images[$count++]; ?>"
+                                                    data-price="<?= $variant['priceFormatted']; ?>"
+                                                    data-action="<?= $variant['priceActionFormatted']; ?>"
+                                                    data-preorder="<?= $variant['pricePreorderFormatted']; ?>"
+                                                    data-credit="<?= $variant['priceCreditFormatted']; ?>"></li>
+                                            <?php endforeach; ?>
+                                        </ul>
+                                    </div>
+                                    <?= $this->render('../_blocks/_landing-bonus', [
+                                        'product' => $product,
+                                        'class' => ''
+                                    ]); ?>
+                                </div>
+                            </div>
+                            <?= $this->render('../_blocks/_landing-buy-block', [
+                                'product' => $product,
+                                'class' => ''
+                            ]); ?>
+                            <?= $this->render('../_blocks/_landing-credit', [
+                                'product' => $product,
+                                'class' => ''
+                            ]); ?>
+                            <?= $this->render('../_blocks/_landing-pickup', [
+                                'product' => $product,
+                                'class' => ''
+                            ]); ?>
+                            <?= \app\common\widgets\AdditionalGoodsWidget\AdditionalGoodsWidget::widget([
+                                'product' => $product,
+                            ]); ?>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="functions" class="amerigo-advantages" id="more-info">
+                <img class="plashka" src="images/bg/plashka-left.png" />
+                <div class="block__inner">
+                    <h2 class="amerigo-advantages__caption">Уникальные <br><b>функции</b></h2>
+                    <div class="advantages-wrapper">
+                        <div class="advantage-block">
+                            <img style="height: 272px;" src="images/landing/screen2_photo1.png" />
+                            <h3 class="advantage-block__caption">Уникальные <br>программы</h3>
+                            <p class="advantage-block__text">
+                                Пять программ массажа<br>
+                                и четыре дня<br>
+                                определенных зон
+                            </p>
+                        </div>
+                        <div class="advantage-block">
+                            <img src="images/landing/screen2_photo2.png" />
+                            <h3 class="advantage-block__caption">Вибрация <br>разных видов</h3>
+                            <p class="advantage-block__text">
+                                Два вида вибрации: <br>
+                                спинки и сидения
+                            </p>
+                        </div>
+                        <div class="advantage-block">
+                            <img src="images/landing/screen2_photo3.png" />
+                            <h3 class="advantage-block__caption">Цифровой <br>массажист ступней</h3>
+                            <p class="advantage-block__text">
+                                Воздушно - <br>
+                                компрессионный <br>
+                                массаж стоп
+                            </p>
+                        </div>
+                        <div class="advantage-block">
+                            <img src="images/landing/screen2_photo4.png" />
+                            <h3 class="advantage-block__caption">Глубокий саммаж <br>ног</h3>
+                            <p class="advantage-block__text">
+                                Уникальный комплекс <br>
+                                наклона подножки <br>
+                                Ultimate relax
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block amerigo3 lazy-load"
+                 style="background: url('images/landing/screen3.jpg') top center no-repeat">
+                <div class="block__inner">
+                    <div class="amerigo3_desc">
+                        <div class="amerigo3__title l-title--x">
+                            Технологии
+                            <span class="t-bold">И КОМФОРТ</span>
+                        </div>
+                        <div class="amerigo3__text l-text--s" itemprop="description">
+                            Кресло Amerigo — это умный цифровой массажист, который владеет
+                            практически всеми известными приемами классического оздоровительного
+                            массажа. Он может массировать шею, спину, поясницу, бедра и даже икры.
+                            Предусмотрены такие приемы массажа, как поглаживание,
+                            растирание, разминание и вибрация.
+                        </div>
+                    </div>
+                </div><!-- /.block__inner -->
+                <img class="amerigo3-sm" src="images/landing/amerigo/amerigo3-sm.jpg">
+            </div><!-- /.block -->
+
+            <div class="block amerigo4 lazy-load"
+                 style="background: url('images/landing/screen4.jpg') top center no-repeat">
+                <div class="block__inner">
+                    <div class="amerigo4_desc">
+                        <div class="amerigo4__title l-title--x">
+                            УНИКАЛЬНЫЕ ПРОГРАММЫ
+                            <span class="t-bold">ФУНКЦИОНИРОВАНИЯ</span>
+                        </div>
+                        <div class="amerigo4__text l-text--s">
+                            Сев в мягкое кресло Amerigo и устроившись поудобнее,
+                            Вы можете выбрать одну из пяти программ массажа
+                            для всего тела и одну из четырех программ
+                            для определенных зон. С какой программы Вы
+                            начнете? Хочется для начала выполнить общий массаж
+                            или чтобы кресло помассировало Вам ноги? Можно
+                            выбирать по одной программе каждый день или
+                            запускать по очереди все во время одного сеанса.
+                        </div>
+                    </div>
+                </div><!-- /.block__inner -->
+            </div><!-- /.block -->
+
+            <div class="block amerigo5 lazy-load"
+                 style="background: url('images/landing/screen5.jpg') top center no-repeat">
+                <div class="amerigo5__title-bg"></div>
+                <div class="block__inner">
+                    <div class="amerigo5__desc">
+                        <div class="amerigo5__title l-title--x">
+                            ТОНИЗИРУЮЩАЯ ВИБРАЦИЯ
+                            <span class="t-bold">РАЗНЫХ ВИДОВ</span>
+                        </div>
+                        <div class="amerigo5__text l-text--s">
+                            В кресле Amerigo предусмотрено два вида вибрации: спинки кресла
+                            и его сиденья. Вы получите массу приятных ощущений, которых так
+                            не хватало раньше. Таким образом, Amerigo помогает разогнать кровь,
+                            привести в тонус кожу, мышцы, внутренние органы. Во время вибрации
+                            оказывается воздействие на нервные рецепторы, что положительно влияет
+                            на состояние нервной системы.
+                        </div>
+                    </div>
+                </div><!-- /.block__inner -->
+            </div><!-- /.block -->
+
+            <div class="block amerigo6 lazy-load"
+                 style="background: url('images/landing/screen6.jpg') top center no-repeat">
+                <div class="amerigo6__title-bg">
+                    <div class="amerigo6__title-bg1"></div>
+                    <div class="amerigo6__title-bg2"></div>
+                    <div class="amerigo6__title-bg3"></div>
+                </div>
+                <div class="block__inner">
+                    <div class="amerigo6_desc">
+                        <div class="amerigo6__title l-title--x">
+                            Эффективность
+                            <span class="t-bold">и польза</span>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="amerigo6__text l-text--s">
+                            Кресло Amerigo поможет
+                            расслабиться, снять стресс,
+                            зарядиться новыми силами.
+                            Оно способно предотвратить
+                            проблемы с позвоночником,
+                            кожей, сердечно-сосудистой
+                            системой, многими
+                            внутренними органами.
+                            Сила массажа настолько
+                            велика, что он может улучшать
+                            даже состояние иммунной
+                            системы.
+                        </div>
+                    </div>
+                </div><!-- /.block__inner -->
+                <img class="amerigo6-sm" src="images/landing/screen6.jpg">
+            </div><!-- /.block -->
+
+            <div class="block amerigo7 lazy-load"
+                 style="background: url('images/landing/screen7.jpg') top center no-repeat">
+                <div class="block__inner">
+                    <div class="amerigo7__title l-title--x">
+                        НЕЖНЫЙ ЦИФРОВОЙ
+                        <span class="t-bold">МАССАЖИСТ СТУПНЕЙ</span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="amerigo7__text l-text--s">
+                        Ступни для многих женщин — почти эрогенная зона.
+                        Никто не будет спорить, что ощущения во время
+                        массажа стоп просто божественные… Особенно
+                        приятна эта процедура вечером или в конце
+                        рабочего дня, когда ноги буквально ломит
+                        от напряжения. С креслом Amerigo
+                        воздушно-компрессионный массаж стоп можно
+                        сделать в любое время — достаточно просто
+                        устроиться поудобнее и запустить соответствующий режим.
+                    </div>
+                </div><!-- /.block__inner -->
+            </div><!-- /.block -->
+
+            <div class="block amerigo8 lazy-load"
+                 style="background: url('images/landing/screen8.jpg') top center no-repeat">
+                <div class="block__inner">
+                    <div class="amerigo8__title">ЭРГОНОМИЧНОСТЬ<span class="t-bold">И УДОБСТВО</span></div>
+                    <div class="clearfix"></div>
+                    <div class="amerigo8__text">
+                        Управление всеми функциями кресла
+                        осуществляется при помощи удобного
+                        пульта. Вы легко разберетесь с ним:
+                        функции всех кнопок интуитивно понятны.
+                        Вы всегда сможете легко и быстро настроить
+                        Amerigo под себя, выбрать необходимые
+                        режимы массажа, оптимальный наклон всех
+                        элементов кресла. Amerigo — это новый
+                        взгляд на концепцию элитного массажного
+                        кресла, в котором все необходимое
+                        на своих местах.
+                    </div>
+                </div><!-- /.block__inner -->
+            </div><!-- /.block -->
+
+            <div class="block amerigo9 lazy-load"
+                 style="background: url('images/landing/screen9.jpg') top center no-repeat">
+                <div class="block__inner">
+                    <div class="amerigo9__title-bg"></div>
+                    <div class="amerigo9__body">
+                        <div class="amerigo9__text1">
+                            Связать жизнь с Италией
+                            <span class="amerigo9__text1-margin"> - легко!</span>
+                        </div>
+                        <div class="amerigo9__text2">
+                            Просто подари себе
+                            <span class="amerigo9__text2-margin"> Anatomico Amerigo</span>
+                        </div>
+                    </div>
+                </div><!-- /.block__inner -->
+            </div><!-- /.block -->
+
+            <div class="block amerigo10 lazy-load"
+                 style="background: url('images/landing/screen10.jpg') top center no-repeat">
+                <div class="amerigo10__title-bg"></div>
+                <div class="block__inner">
+                    <div class="amerigo10_desc">
+                        <div class="amerigo10__title l-title--x">
+                            ГЛУБОКИЙ МАССАЖ
+                            <span class="t-bold">ВСЕХ ЗОН НОГ</span>
+                        </div>
+                        <div class="amerigo10__text l-text--s">
+                            Массаж ног — один из самых приятных
+                            и полезных видов массажа. Ведь на ногах
+                            находится много биологически активных точек.
+                            В кресле Amerigo предусмотрена двухступенчатая
+                            система воздействия на ноги. Уникальный
+                            комплекс наклона подножки Ultimate relax
+                            помогает сделать массаж самых труднодоступных
+                            зон, вплоть до ахиллова сухожилия. Море
+                            приятных ощущений гарантировано!
+                        </div>
+                    </div>
+                </div><!-- /.block__inner -->
+            </div><!-- /.block -->
+
+            <div class="block amerigo11 lazy-load"
+                 style="background: url('images/landing/screen11.jpg') top center no-repeat">
+                <div class="block__inner">
+                    <div class="amerigo11__title">
+                        два режима
+                        <span class="t-bold">
+					        в спинке
+					    </span>
+                    </div>
+                    <div class="amerigo11__text">
+                        Во время сеанса массажа у специалиста
+                        можно попросить: «Помните посильнее
+                        или наоборот: «Сегодня полегче».
+                        То же самое и с креслом Amerigo.
+                        В его спинке предусмотрено два режима
+                        вибрации. Выбирайте один из них
+                        в зависимости от вашего самочувствия
+                        и настроения сегодня. Кресло будет
+                        работать так, как вам хочется.
+                        Переключение производится
+                        одним нажатием кнопки.
+                    </div>
+                </div><!-- /.block__inner -->
+                <img class="amerigo11-sm" src="images/landing/screen11.jpg">
+            </div><!-- /.block -->
+
+            <?= $this->render('../_blocks/_landing_comments', ['product' => $product]); ?>
+
+            <div class="block amerigo12 lazy-load" id="tech_char"
+                 style="background: url('images/landing/screen12.jpg') top center no-repeat">
+                <div class="block__inner">
+                    <div class="amerigo12__title l-title--x">
+                        ТЕХНИЧЕСКИЕ<br>
+                        <span class="t-bold">ХАРАКТЕРИСТИКИ</span>
+                    </div>
+                    <div class="amerigo12__table l-table l-table--x l-table--yellow">
+                        <table class="l-table__table">
+                            <tbody>
+                            <tr class="l-table__tr">
+                                <td class="l-table__th">Напряжение</td>
+                                <td class="l-table__td">220-240 В</td>
+                            </tr>
+                            <tr class="l-table__tr">
+                                <td class="l-table__th">Мощность</td>
+                                <td class="l-table__td">180 Вт</td>
+                            </tr>
+                            <tr class="l-table__tr">
+                                <td class="l-table__th">Таймер</td>
+                                <td class="l-table__td">5/10/15/25/30 мин</td>
+                            </tr>
+                            <tr class="l-table__tr">
+                                <td class="l-table__th">Вес нетто/брутто</td>
+                                <td class="l-table__td">74/89 кг</td>
+                            </tr>
+                            <tr class="l-table__tr">
+                                <td class="l-table__th">Габариты<br> в разложенном виде</td>
+                                <td class="l-table__td">202х72х75 см</td>
+                            </tr>
+                            <tr class="l-table__tr">
+                                <td class="l-table__th">Габариты<br> в сложенном виде</td>
+                                <td class="l-table__td">143х72х117 см</td>
+                            </tr>
+                            <tr class="l-table__tr">
+                                <td class="l-table__th">Гарантия</td>
+                                <td class="l-table__td">3 года</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div><!-- /.block__inner -->
+                <img class="amerigo12-sm" src="images/landing/screen12-sm.jpg">
+            </div><!-- /.block -->
+
+        </div><!-- /.landing-content -->
+
+        <div class="landing__loader"></div>
+
+    </div><!-- /.landing-wrapper -->
+
+
+</div><!-- /.landing-page -->
+
+
+<?= \app\common\widgets\AdditionalGoodsWidget\AdditionalGoodsWidget::widget([
+        'product' => $product,
+        'template' => 'landing_21',
+    ]); ?>
+
+
+    <section class="landing-form-21">
+    <div class="landing-form-21__container">
+        <?= \app\common\widgets\landing\GetGoodOffer\GetGoodOfferWidget::widget([
+            'template' => 'dark',
+            'h2' => 'Закажите <span>уже сейчас</span>',
+            'product' => $product,
+        ]); ?>
+        <div class="landing-form-21__img">
+            <img src="images/landing//amerigo-card.webp" alt="main image">
+        </div>
+    </div>
+</section>
+
+
+<?=
+  $this->render('../_blocks/_buy_block_sticky_mobile', [
+    'product' => $product,
+    'class' => ''
+  ]); ?>

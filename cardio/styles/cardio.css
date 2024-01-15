@@ -1,0 +1,1374 @@
+@charset "UTF-8";
+    @font-face {
+    font-family: Gothic;
+    font-display: swap;
+    src: url(/fonts/centurygothic.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: PTSans;
+    font-display: swap;
+    src: url(/fonts/PTSans.eot);
+    src: url(/fonts/PTSans.eot?#iefix) format("embedded-opentype"), url(/fonts/PTSans.woff2) format("woff2"), url(/fonts/PTSans.woff) format("woff"), url(/fonts/PTSans.ttf) format("truetype"), url(/fonts/PTSans.svg#PTSans) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: PTSans;
+    font-display: swap;
+    src: url(/fonts/PTSansBold.eot);
+    src: url(/fonts/PTSansBold.eot?#iefix) format("embedded-opentype"), url(/fonts/PTSansBold.woff2) format("woff2"), url(/fonts/PTSansBold.woff) format("woff"), url(/fonts/PTSansBold.ttf) format("truetype"), url(/fonts/PTSansBold.svg#PTSans) format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: PTSans;
+    font-display: swap;
+    src: url(/fonts/PTSansItalic.ttf) format("truetype");
+    src: url(/fonts/PTSansItalic.woff2) format("woff2"), url(/fonts/PTSansItalic.woff) format("woff");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: PTSansNarrow;
+    font-display: swap;
+    src: url(/fonts/PTSansNarrow.eot);
+    src: url(/fonts/PTSansNarrow.eot?#iefix) format("embedded-opentype"), url(/fonts/PTSansNarrow.woff2) format("woff2"), url(/fonts/PTSansNarrow.woff) format("woff"), url(/fonts/PTSansNarrow.ttf) format("truetype"), url(/fonts/PTSansNarrow.svg#PTSansNarrow) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: PTSansNarrow;
+    font-display: swap;
+    src: url(/fonts/PTSansNarrowBold.eot);
+    src: url(/fonts/PTSansNarrowBold.eot?#iefix) format("embedded-opentype"), url(/fonts/PTSansNarrowBold.woff2) format("woff2"), url(/fonts/PTSansNarrowBold.woff) format("woff"), url(/fonts/PTSansNarrowBold.ttf) format("truetype"), url(/fonts/PTSansNarrowBold.svg#PTSansNarrow) format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: MyriadProLight;
+    src: url(/fonts/MyriadProLight.eot);
+    src: url(/fonts/MyriadProLight.eot?#iefix) format("embedded-opentype"), url(/fonts/MyriadProLight.woff) format("woff"), url(/fonts/MyriadProLight.woff2) format("woff2"), url(/fonts/MyriadProLight.ttf) format("truetype"), url(/fonts/MyriadProLight.svg#MyriadProLight) format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Myriad Pro";
+    src: url(/fonts/MyriadPro.otf) format("opentype");
+    src: url(/fonts/MyriadPro.woff2) format("woff2"), url(/fonts/MyriadPro.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: MyriadProBold;
+    src: url(/fonts/MyriadProBold.otf) format("opentype");
+    src: url(/fonts/MyriadProBold.woff2) format("woff2"), url(/fonts/MyriadProBold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: PragmaticaC;
+    src: url(/fonts/PTPragmaticaCyrillic.ttf) format("opentype");
+    src: url(/fonts/PTPragmaticaCyrillic.woff2) format("woff2"), url(/fonts/PTPragmaticaCyrillic.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: PragmaticaC;
+    src: url(/fonts/PTPragmaticaBoldCyrillic.ttf) format("opentype");
+    src: url(/fonts/PTPragmaticaBoldCyrillic.woff2) format("woff2"), url(/fonts/PTPragmaticaBoldCyrillic.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Circe;
+    font-display: swap;
+    src: url(/fonts/Circe-Thin.eot);
+    src: url(/fonts/Circe-Thin.eot?#iefix) format("embedded-opentype"), url(/fonts/Circe-Thin.woff) format("woff"), url(/fonts/Circe-Thin.woff2) format("woff2"), url(/fonts/Circe-Thin.ttf) format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: Circe;
+    font-display: swap;
+    src: url(/fonts/Circe-ExtraLight.eot);
+    src: url(/fonts/Circe-ExtraLight.eot?#iefix) format("embedded-opentype"), url(/fonts/Circe-ExtraLight.woff) format("woff"), url(/fonts/Circe-ExtraLight.woff2) format("woff2"), url(/fonts/Circe-ExtraLight.ttf) format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: Circe;
+    font-display: swap;
+    src: url(/fonts/Circe-Light.eot);
+    src: url(/fonts/Circe-Light.eot?#iefix) format("embedded-opentype"), url(/fonts/Circe-Light.woff) format("woff"), url(/fonts/Circe-Light.woff2) format("woff2"), url(/fonts/Circe-Light.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: Circe;
+    font-display: swap;
+    src: url(/fonts/Circe-Regular.eot);
+    src: url(/fonts/Circe-Regular.eot?#iefix) format("embedded-opentype"), url(/fonts/Circe-Regular.woff) format("woff"), url(/fonts/Circe-Regular.woff2) format("woff2"), url(/fonts/Circe-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Circe;
+    font-display: swap;
+    src: url(/fonts/Circe-Bold.eot);
+    src: url(/fonts/Circe-Bold.eot?#iefix) format("embedded-opentype"), url(/fonts/Circe-Bold.woff) format("woff"), url(/fonts/Circe-Bold.woff2) format("woff2"), url(/fonts/Circe-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: Circe;
+    font-display: swap;
+    src: url(/fonts/Circe-ExtraBold.eot);
+    src: url(/fonts/Circe-ExtraBold.eot?#iefix) format("embedded-opentype"), url(/fonts/Circe-ExtraBold.woff) format("woff"), url(/fonts/Circe-ExtraBold.woff2) format("woff2"), url(/fonts/Circe-ExtraBold.ttf) format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: BebasNeue;
+    src: url(/fonts/bebasneuethin.woff2) format("woff2");
+    src: local("☺"), url(/fonts/bebasneuethin.woff) format("woff"), url(/fonts/bebasneuethin.ttf) format("truetype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: BebasNeue;
+    src: url(/fonts/bebasneuelight.woff2) format("woff2");
+    src: local("☺"), url(/fonts/bebasneuelight.ttf) format("truetype"), url(/fonts/bebasneuelight.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: BebasNeue;
+    src: url(/fonts/bebasneueregular.eot);
+    src: local("☺"), url(/fonts/bebasneueregular.woff2) format("woff2"), url(/fonts/bebasneueregular.woff) format("woff"), url(/fonts/bebasneueregular.ttf) format("truetype"), url(/fonts/bebasneueregular.svg) format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: BebasNeue;
+    src: url(/fonts/bebasneuebold.eot);
+    src: local("☺"), url(/fonts/bebasneuebold.woff2) format("woff2"), url(/fonts/bebasneuebold.woff) format("woff"), url(/fonts/bebasneuebold.ttf) format("truetype"), url(/fonts/bebasneuebold.svg) format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Montserrat;
+    font-display: swap;
+    src: local("Montserrat Light"), local("Montserrat-Light"), url(/fonts/Montserrat-Light.woff2) format("woff2"), url(/fonts/Montserrat-Light.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: Montserrat;
+    font-display: swap;
+    src: local("Montserrat"), local("Montserrat-Regular"), url(/fonts/Montserrat-Regular.woff2) format("woff2"), url(/fonts/Montserrat-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Montserrat;
+    font-display: swap;
+    src: local("Montserrat"), local("Montserrat-Regular"), url(/fonts/Montserrat-Medium.woff2) format("woff2"), url(/fonts/Montserrat-Medium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: Montserrat;
+    font-display: swap;
+    src: local("Montserrat Bold"), local("Montserrat-Bold"), url(/fonts/Montserrat-Bold.woff2) format("woff2"), url(/fonts/Montserrat-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: Montserrat;
+    font-display: swap;
+    src: local("Montserrat Black"), local("Montserrat-Black"), url(/fonts/Montserrat-Black.woff2) format("woff2"), url(/fonts/Montserrat-Black.woff) format("woff");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: Morpha;
+    font-display: swap;
+    src: url(/fonts/Morpha-Bold.woff2) format("woff2");
+    src: local("☺"), url(/fonts/Morpha-Bold.woff) format("woff"), url(/fonts/Morpha-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Machina";
+    font-display: swap;
+    src: local("NeueMachina-Bold"), local("NeueMachina-Bold"), url(/fonts/NeueMachina-Bold.woff2) format("woff2"), url(/fonts/NeueMachina-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Machina";
+    font-display: swap;
+    src: local("NeueMachina-Black"), local("NeueMachina-Black"), url(/fonts/NeueMachina-Black.woff2) format("woff2"), url(/fonts/NeueMachina-Bold.woff) format("woff");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: Norican;
+    font-display: swap;
+    src: url(/fonts/norican-regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Cy Grotesk";
+    font-display: swap;
+    src: url(/fonts/cy-grotesk-grand-dark.otf);
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: RainerTestv04;
+    src: url(/fonts/RainerTestv04-Bold.woff2), url(/fonts/RainerTestv04-Bold.woff);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Anticva;
+    font-display: swap;
+    src: local("Anticva"), local("Anticva"), url(/fonts/Anticva-Regular.woff2) format("woff2"), url(/fonts/Anticva-Regular.woff) format("woff"), url(/fonts/Anticva-Regular.otf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Halvar Breitschrift";
+    src: local("HalvarBreit-Blk"), local("HalvarBreit-Blk"), url(/fonts/HalvarBreit-Blk.woff2) format("woff2"), url(/fonts/HalvarBreit-Blk.woff) format("woff");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: Damn;
+    font-display: swap;
+    src: local("Damn"), local("Damn"), url(/fonts/Damn.woff2) format("woff2"), url(/fonts/Damn.woff) format("woff"), url(/fonts/Damn.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Monologue DEMO";
+    font-display: swap;
+    src: local("Monologue_DEMO"), local("Monologue_DEMO"), url(/fonts/Monologue_DEMO.woff) format("woff"), url(/fonts/Monologue_DEMO.ttf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Nasalization;
+    font-display: swap;
+    src: local("Nasalization"), local("Nasalization"), url(/fonts/Nasalization.woff) format("woff"), url(/fonts/Nasalization.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: PatsySans;
+    font-display: swap;
+    src: local("PatsySans"), local("PatsySans"), url(/fonts/PatsySans.woff) format("woff"), url(/fonts/PatsySans.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Lighthaus;
+    src: url(/fonts/Lighthaus.eot);
+    src: url(/fonts/Lighthaus.eot?#iefix) format("embedded-opentype"), url(/fonts/Lighthaus.woff2) format("woff2"), url(/fonts/Lighthaus.woff) format("woff"), url(/fonts/Lighthaus.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: UltramonoWide-LightItalic;
+    src: url(/fonts/UltramonoWide-LightItalic.woff2) format("woff2"), url(/fonts/UltramonoWide-LightItalic.woff) format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: UltramonoWide-Light;
+    src: url(/fonts/UltramonoWide-Light.woff2) format("woff2"), url(/fonts/UltramonoWide-Light.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Nikkyou Sans";
+    src: url(/fonts/NikkyouSans.woff2) format("woff2"), url(/fonts/NikkyouSans.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Corvetta;
+    src: url(/fonts/Corvetta.woff2) format("woff2"), url(/fonts/Corvetta.woff) format("woff"), url(/fonts/Corvetta.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: a_LCDNovaObl;
+    src: url(/fonts/a_lcdnovaobl.woff) format("woff"), url(/fonts/a_lcdnovaobl.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Felidae;
+    src: url(/fonts/Felidae.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Muller Next Expanded Trial";
+    src: url(/fonts/MullerNextExtraCondTrial-Thin.otf);
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Muller Next Expanded Trial";
+    src: url(/fonts/MullerNextExpandedTrial-Regular.otf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Muller Next Expanded Trial";
+    src: url(/fonts/MullerNextExpandedTrial-RegularItalic.otf);
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Muller Next Expanded Trial";
+    src: url(/fonts/MullerNextExpandedTrial-ExtraBold.otf);
+    font-weight: 750;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Muller Next Expanded Trial";
+    src: url(/fonts/MullerNextExpandedTrial-ExtraBoldItalic.otf);
+    font-weight: 750;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Muller Next Expanded Trial";
+    src: url(/fonts/MullerNextExpandedTrial-Heavy.otf);
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Muller Next Expanded Trial";
+    src: url(/fonts/MullerNextExpandedTrialThinItalic.otf);
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Muller Next ExtraCond Trial";
+    src: url(/fonts/MullerNextExtraCondTrial-ExtraBold.otf);
+    font-weight: 750;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Muller Next ExtraCond Trial Heavy";
+    src: url(/fonts/MullerNextExtraCondTrial-HeavyItalic.otf) format("opentype"), url(/fonts/MullerNextExtraCondTrial-HeavyItalic.ttf) format("truetype");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Muller Next ExtraCond Trial";
+    src: url(/fonts/MullerNextExtraCondTrial-ExtraBoldItalic.ttf) format("truetype"), url(/fonts/MullerNextExtraCondTrial-ExtraBoldItalic.woff2) format("woff2");
+    font-weight: 750;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Muller Next ExtraCond Trial";
+    src: url(/fonts/MullerNextExtraCondTrial-Regular.otf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Muller Next ExtraCond Trial";
+    src: url(/fonts/MullerNextExtraCondTrial-RegularItalic.otf);
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Muller Next ExtraCond Trial";
+    src: url(/fonts/MullerNextExtraCondTrialThin.otf);
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Muller Next Trial";
+    src: url(/fonts/MullerNextTrial-Regular.otf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Muller Next Trial";
+    src: url(/fonts/MullerNextTrial-ExtraBold.otf);
+    font-weight: 750;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Muller Next Wide Trial";
+    src: url(/fonts/MullerNextTrial-ThinItalic.woff2);
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: Cakra;
+    src: url(/fonts/Cakra-Normal.otf) format("opentype");
+    src: url(/fonts/Cakra-Normal.woff2) format("woff2"), url(/fonts/Cakra-Normal.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Noteworthy;
+    src: url(/fonts/NoteworthyLight.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Technology;
+    src: url(/fonts/Technology.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Technology;
+    src: url(/fonts/Technology-Bold.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Unbounded;
+    src: url(/fonts/Unbounded-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Unbounded;
+    src: url(/fonts/Unbounded-Black.ttf) format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter-SemiBold.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Montserrat Alternates";
+    src: url(/fonts/MontserratAlternates-Light.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Snell Roundhand";
+    src: url(/fonts/snell-roundhand-900.otf) format("opentype");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Snell Roundhand";
+    src: url(/fonts/snell-roundhand-700.otf) format("opentype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: Lighthaus;
+    src: url(/fonts/Lighthaus-400.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Code pro black";
+    src: url(/fonts/code_pro_black.otf) format("opentype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Boldstrom;
+    src: url(/fonts/Boldstrom-b.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Europe ext regular";
+    src: url(/fonts/europeext.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Europe ext bold";
+    src: url(/fonts/europeext_bold.otf) format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Europe ext bold italic";
+    src: url(/fonts/europeext_bold_italic.otf) format("opentype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "TT Smalls Trial";
+    src: url(/fonts/TT-Smalls-Trial-Black.woff) format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Mak;
+    src: url(/fonts/MAK.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: GTEestiProDisplay;
+    src: url(/fonts/GTEestiProDisplay-Bold.woff2) format("woff2");
+    src: url(/fonts/GTEestiProDisplay-Bold.woff) format("woff");
+    src: url(/fonts/GTEestiProDisplay-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: EuropeExt;
+    src: url(/fonts/europeextnormal.woff2) format("woff2");
+    src: url(/fonts/europeextnormal.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    margin: 0;
+}
+.landing-card {
+    font-family: PTSans, sans-serif!important;
+}
+@media all and (max-width:1023px) {
+    .landing-card {
+    padding-bottom: 60px;
+}
+}@media all and (max-width:1023px) and (max-width:767px) {
+    .landing-card {
+    padding-bottom: 40px;
+}
+}.landing-card__cap-block {
+    padding: 40px 0 54px 0;
+    text-transform: uppercase;
+}
+@media all and (max-width:1023px) {
+    .landing-card__cap-block {
+    padding: 50px 0 20px 0;
+}
+}@media all and (max-width:1023px) and (max-width:767px) {
+    .landing-card__cap-block {
+    padding: 30px 0 30px 0;
+}
+}.landing-card__caption {
+    font-family: PTSans, sans-serif;
+    font-size: 48px;
+    color: #49344b;
+    line-height: 1;
+    font-weight: 400;
+    margin-left: 130px;
+}
+@media all and (max-width:1023px) {
+    .landing-card__caption {
+    font-size: 40px;
+    margin-left: 0;
+    text-align: center;
+}
+}@media all and (max-width:1023px) and (max-width:767px) {
+    .landing-card__caption {
+    font-size: 24px;
+}
+}.landing-card__caption .per-cat {
+    font-size: 30px;
+}
+@media all and (max-width:767px) {
+    .landing-card__caption .per-cat {
+    font-size: 20px;
+}
+}.landing-card__caption .per-dark {
+    color: #4f4f4f;
+    font-weight: 700;
+}
+.landing-card__cap-dark {
+    color: #523734;
+    font-weight: 700;
+}
+.landing-card__content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+@media all and (max-width:1023px) {
+    .landing-card__content {
+    display: block;
+}
+}.landing-card__left {
+    margin-top: 30px;
+}
+@media all and (max-width:1239px) {
+    .landing-card__left {
+    margin-top: 80px;
+}
+}@media all and (max-width:1239px) and (max-width:1023px) {
+    .landing-card__left {
+    width: auto;
+    margin-top: 0;
+}
+}.landing-card__right {
+    margin-top: 22px;
+}
+@media all and (max-width:1023px) {
+    .landing-card__right {
+    margin-top: auto;
+}
+}.landing-card__price-left .ruble-icon {
+    fill: #000;
+}
+.landing-card__price-right .ruble-icon {
+    fill: #000;
+}
+.landing-card__price-action {
+    color: #e03638;
+}
+.landing-card__old-price-text {
+    color: #e03638;
+}
+.landing-card__old-price .ruble-icon {
+    fill: #000;
+}
+.landing-card__bonus-value {
+    color: #62b14e;
+}
+.landing-card__bonus-points {
+    color: #62b14e;
+}
+.landing-card__compare-btn {
+    border: 1px solid #b9b9d2;
+}
+.landing-card .credit-btn {
+    border: 1px solid #b9b9d2;
+}
+.landing-card .credit-btn .percent {
+    color: #e95c20;
+}
+.landing-card .credit-btn .credit-text {
+    color: #000;
+}
+.landing-card .credit-btn .red-price {
+    color: #e95c20;
+}
+.landing-card__warranty {
+    position: absolute;
+    top: 150px;
+    right: 0;
+}
+@media all and (max-width:1239px) {
+    .landing-card__warranty {
+    right: 16px;
+    top: 180px;
+}
+}@media all and (max-width:1239px) and (max-width:1023px) {
+    .landing-card__warranty {
+    top: 190px;
+    z-index: 1;
+    right: 0;
+}
+}@media all and (max-width:1239px) and (max-width:1023px) and (max-width:767px) {
+    .landing-card__warranty {
+    right: 16px;
+}
+}@media all and (max-width:1239px) {
+    .prod-img-wrapper {
+    text-align: center;
+}
+}.landing-slider {
+    margin-top: 64px;
+    padding: 0 30px 0 56px;
+}
+@media all and (max-width:1239px) {
+    .landing-slider {
+    padding: 0 30px 0 37px;
+}
+}@media all and (max-width:1239px) and (max-width:1023px) {
+    .landing-slider {
+    padding: 0 24px 0 52px;
+}
+}@media all and (max-width:1239px) and (max-width:1023px) and (max-width:767px) {
+    .landing-slider {
+    padding: 0 24px 0 6%}
+}@media (max-width:1239px) and (max-width:1023px) and (max-width:767px) and (max-width:500px) {
+    .landing-slider {
+    padding: 0 24px 0 10%}
+}@media (max-width:1239px) and (max-width:1023px) and (max-width:767px) and (max-width:500px) and (max-width:400px) {
+    .landing-slider {
+    padding: 0 30px 0 10%}
+}@media (max-width:1239px) and (max-width:1023px) and (max-width:767px) and (max-width:500px) and (max-width:400px) and (max-width:370px) {
+    .landing-slider {
+    padding: 0 32px 0 17%}
+}.landing-slider .slick-arrow {
+    width: 30px;
+}
+.landing-slider .slick-prev {
+    height: 100%;
+    left: 0;
+    background: url(../images/svg/l-slick-prev.svg) no-repeat;
+    background-size: 100% 100%}
+.landing-slider .slick-prev:hover {
+    background: url(../images/svg/l-slick-prev-hov-st.svg) no-repeat;
+    background-size: 100% 100%}
+.landing-slider .slick-next {
+    height: 100%;
+    right: 0;
+    background: url(../images/svg/l-slick-next.svg) no-repeat;
+    background-size: 100% 100%}
+.landing-slider .slick-next:hover {
+    background: url(../images/svg/l-slick-next-hov-st.svg) no-repeat;
+    background-size: 100% 100%}
+.landing-slider .slick-slide img {
+    border-radius: 10px;
+    border: none;
+}
+@media all and (max-width:1239px) {
+    .landing-slider .slick-slide img {
+    width: 88px;
+}
+}.l-video-link {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 184px;
+    width: 149px;
+    height: 35px;
+    background: url(../images/svg/landing-video.svg) no-repeat;
+}
+@media all and (max-width:1239px) {
+    .l-video-link {
+    bottom: 176px;
+}
+}@media all and (max-width:1239px) and (max-width:1023px) {
+    .l-video-link {
+    bottom: 184px;
+}
+}@media all and (max-width:1239px) and (max-width:1023px) and (max-width:767px) {
+    .l-video-link {
+    display: none;
+}
+}.social-block {
+    margin-top: 30px;
+}
+.cardio {
+    height: 990px;
+    background: url(../images/landing/bg/cardio/cardio_01.jpg) top center no-repeat;
+    background-size: cover;
+    color: #000;
+}
+@media all and (max-width:1239px) {
+    .cardio {
+    height: 960px;
+}
+}@media all and (max-width:1239px) and (max-width:1023px) {
+    .cardio {
+    background: #fff;
+    height: auto;
+    padding-bottom: 110px;
+}
+}@media all and (max-width:1239px) and (max-width:1023px) and (max-width:767px) {
+    .cardio {
+    padding-bottom: 50px;
+}
+}.cardio__title {
+    font-family: PTSans, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+}
+.cardio1 .p-head__title {
+    width: 430px;
+}
+.cardio1 {
+    height: 980px;
+    background: url(../images/landing/bg/cardio/cardio_01.jpg) top center no-repeat;
+}
+.cardio1 .b-product__ontime-box {
+    margin-left: 21px;
+}
+.cardio2 {
+    height: 766px;
+    font-family: PTSans, sans-serif;
+}
+.cardio2__desc {
+    position: absolute;
+    top: 34px;
+    left: 0;
+    width: 635px;
+}
+.cardio2__title {
+    font-size: 51px;
+    line-height: 55px;
+    color: #fff;
+}
+.cardio2__title .t-bold {
+    color: #941f1b;
+}
+.cardio2__text {
+    margin: 15px 0 0 0;
+    font-size: 23px;
+    line-height: 27px;
+    letter-spacing: .1px;
+    color: #fff;
+}
+.cardio2__block {
+    position: absolute;
+    top: 549px;
+    width: 235px;
+    text-align: center;
+}
+.cardio2__btitle {
+    font-size: 19px;
+    line-break: 22px;
+    font-weight: 700;
+}
+.cardio2__btext {
+    margin: 7px 0 0 0;
+    font-size: 16px;
+    line-height: 20px;
+}
+.cardio2__block--1 {
+    top: 559px;
+    left: -4px;
+}
+.cardio2__block--1 .cardio2__btext {
+    margin: 20px 0 0 0;
+}
+.cardio2__block--2 {
+    left: 223px;
+}
+.cardio2__block--3 {
+    left: 440px;
+}
+.cardio2__block--4 {
+    left: 661px;
+}
+.cardio2__block--5 {
+    left: 890px;
+}
+.cardio3 {
+    height: 634px;
+}
+.cardio3__desc {
+    position: absolute;
+    top: 225px;
+    right: 4px;
+    width: 390px;
+    text-align: right;
+    color: #fff;
+}
+.cardio3__title {
+    font-size: 47px;
+    line-height: 52px;
+}
+.cardio3__title .t-bold {
+    font-size: 51px;
+    line-height: 55px;
+    color: #ae2607;
+}
+.cardio3__text {
+    margin: 9px 0 0 0;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: .1px;
+}
+.cardio4 {
+    height: 602px;
+}
+.cardio4__title {
+    position: absolute;
+    top: 42px;
+    left: -2px;
+    font-size: 46px;
+    line-height: 52px;
+}
+.cardio4__title .t-bold {
+    color: #bdb6ab;
+}
+.cardio4__video {
+    position: absolute;
+    top: 170px;
+    left: 0;
+    width: 587px;
+    height: 350px;
+    border: 10px solid rgba(255, 255, 255, .3);
+    border-radius: 10px;
+}
+.cardio5 {
+    height: 630px;
+}
+.cardio5__desc {
+    position: absolute;
+    top: 75px;
+    right: 1px;
+    width: 480px;
+    text-align: right;
+    color: #000;
+}
+.cardio5__title {
+    font-size: 51px;
+    line-height: 51px;
+}
+.cardio5__title .t-bold {
+    color: #8c5200;
+}
+.cardio5__text {
+    margin: 14px 4px 0 0;
+    font-size: 27px;
+    line-height: 30px;
+    letter-spacing: .1px;
+}
+.cardio6 {
+    height: 738px;
+}
+.cardio6__desc {
+    position: absolute;
+    top: 38px;
+    right: 1px;
+    width: 535px;
+    text-align: right;
+    color: #fff;
+}
+.cardio6__title {
+    font-size: 51px;
+    line-height: 55px;
+}
+.cardio6__title .t-bold {
+    color: #ca741b;
+}
+.cardio6__title .cardio6__green {
+    color: #80941c;
+}
+.cardio6__text {
+    margin: 15px 0 0 0;
+    font-size: 27px;
+    line-height: 30px;
+    letter-spacing: .1px;
+}
+.cardio6__video {
+    position: absolute;
+    top: 321px;
+    right: 2px;
+    width: 587px;
+    height: 350px;
+    border: 10px solid rgba(255, 255, 255, .3);
+    border-radius: 10px;
+}
+.cardio7 {
+    height: 787px;
+}
+.cardio7__title {
+    position: absolute;
+    top: 44px;
+    left: 100px;
+    font-size: 52px;
+    line-height: 71px;
+}
+.cardio7__title .t-bold {
+    font-size: 85px;
+    color: #773285;
+}
+.cardio7__text {
+    position: absolute;
+    top: 52px;
+    right: 95px;
+    font-size: 23px;
+    line-height: 28px;
+    text-align: right;
+    letter-spacing: .1px;
+}
+.cardio8 {
+    height: 697px;
+}
+.cardio8__desc {
+    position: absolute;
+    top: 81px;
+    left: 597px;
+    font-family: PTSans, sans-serif;
+}
+.cardio8__block {
+    padding: 15px 8px 18px 27px;
+    box-sizing: border-box;
+    width: 434px;
+    border-radius: 10px;
+    background: rgba(35, 31, 32, .5);
+}
+.cardio8__name {
+    font-size: 32px;
+    line-height: 35px;
+}
+.cardio8__name .t-bold {
+    color: #005eca;
+}
+.cardio8__char {
+    margin: 8px 0 0 0;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: .5px;
+}
+.cardio8__text {
+    margin: 25px 0 0 28px;
+    font-size: 21px;
+    line-height: 23px;
+    font-style: italic;
+}
+.cardio9 {
+    height: 754px;
+}
+.cardio9__desc {
+    position: absolute;
+    top: 31px;
+    left: -3px;
+}
+.cardio9__title {
+    font-size: 43px;
+    line-height: 51px;
+}
+.cardio9__title .t-bold {
+    font-size: 44px;
+    color: #c16400;
+}
+.cardio9__text {
+    margin: 9px 0 0 4px;
+    font-size: 23px;
+    line-height: 27px;
+    letter-spacing: .1px;
+    color: #efefef;
+}
+.cardio10 {
+    height: 477px;
+}
+.cardio10__desc {
+    position: absolute;
+    top: 36px;
+    right: 3px;
+    font-family: PTSans, sans-serif;
+    text-align: right;
+}
+.cardio10__title {
+    font-size: 38px;
+    line-height: 45px;
+}
+.cardio10__title .t-bold {
+    color: #008fd0;
+}
+.cardio10__text {
+    margin: 11px 2px 0 0;
+    font-size: 20px;
+    line-height: 24px;
+}
+.cardio11 {
+    height: 749px;
+}
+.cardio11__title {
+    position: absolute;
+    top: 57px;
+    left: -3px;
+    font-size: 51px;
+    line-height: 55px;
+}
+.cardio11__text {
+    position: absolute;
+    top: 325px;
+    right: 0;
+    width: 410px;
+    font-size: 27px;
+    line-height: 33px;
+    letter-spacing: .3px;
+    text-align: right;
+    color: #231f20;
+}
+.cardio12 {
+    height: 735px;
+}
+.cardio12__title {
+    position: absolute;
+    top: 55px;
+    right: -1px;
+    font-size: 49px;
+    line-height: 52px;
+    text-align: right;
+}
+.cardio12__block {
+    position: absolute;
+    width: 280px;
+}
+.cardio12__btitle {
+    font-family: PTSans, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: underline;
+    letter-spacing: .3px;
+}
+.cardio12__btext {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 7px 0 0 0;
+    letter-spacing: .1px;
+}
+.cardio12__block--1 {
+    top: 270px;
+    left: 429px;
+}
+.cardio12__block--2 {
+    top: 434px;
+    left: 325px;
+}
+.cardio12__block--3 {
+    top: 594px;
+    left: 440px;
+}
+.cardio13 {
+    height: 769px;
+}
+.cardio13__title {
+    padding: 33px 0 0 43px;
+    font-size: 49px;
+    line-height: 52px;
+    text-align: center;
+}
+.cardio13__title .t-bold {
+    font-size: 50px;
+    line-height: 52px;
+    color: #00a2ff;
+}
+.cardio13__block {
+    position: absolute;
+    width: 210px;
+    padding: 10px 8px;
+    box-sizing: border-box;
+}
+.cardio13__btitle {
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 700;
+    color: #00a2ff;
+}
+.cardio13__btext {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: .3px;
+}
+.cardio13__block--left {
+    left: 120px;
+    text-align: right;
+}
+.cardio13__block--right {
+    right: 83px;
+    text-align: left;
+}
+.cardio13__block--1 {
+    top: 157px;
+}
+.cardio13__block--2 {
+    top: 301px;
+}
+.cardio13__block--3 {
+    top: 453px;
+}
+.cardio13__block--4 {
+    top: 577px;
+}
+.cardio13__block--5 {
+    top: 148px;
+}
+.cardio13__block--6 {
+    top: 300px;
+}
+.cardio13__block--7 {
+    top: 403px;
+}
+.cardio13__block--8 {
+    top: 541px;
+}
+.cardio14 {
+    height: 769px;
+    font-family: PTSans, sans-serif;
+}
+.cardio14__title {
+    padding: 35px 0 0 18px;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -.5px;
+    text-align: center;
+}
+.cardio14__title .t-bold {
+    color: #876f50;
+}
+.cardio14__block {
+    position: absolute;
+    top: 47px;
+    right: 0;
+    width: 365px;
+    text-align: center;
+}
+.cardio14__btitle {
+    font-size: 20px;
+    line-height: 35px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.cardio14__btext {
+    font-size: 17px;
+    line-height: 21px;
+    color: #000;
+}
+.cardio14__block--1 {
+    top: 296px;
+    left: 39px;
+}
+.cardio14__block--2 {
+    top: 296px;
+    left: 378px;
+}
+.cardio14__block--3 {
+    top: 296px;
+    left: 704px;
+}
+.cardio14__block--4 {
+    top: 606px;
+    left: 198px;
+}
+.cardio14__block--5 {
+    top: 606px;
+    left: 540px;
+}
+.cardio15 {
+    height: 731px;
+}
+.cardio15__title {
+    padding: 50px 0 0 39px;
+    font-size: 28px;
+    line-height: 41px;
+    letter-spacing: 0;
+    text-align: center;
+}
+.cardio15__title .t-bold {
+    font-size: 48px;
+}
+.cardio15__table--1 {
+    position: absolute;
+    top: 174px;
+    left: 149px;
+    width: 522px;
+}
+.cardio15__table--2 {
+    position: absolute;
+    top: 174px;
+    right: 119px;
+    width: 300px;
+}
+.cardio15__table--3 {
+    position: absolute;
+    top: 402px;
+    right: 119px;
+    width: 300px;
+}
+.cardio16 {
+    height: 580px;
+}
+.cardio16__title {
+    position: absolute;
+    top: 36px;
+    left: -3px;
+    font-size: 44px;
+    line-height: 45px;
+}
+.cardio16__title .t-bold {
+    color: #eac300;
+}
+.cardio17 {
+    height: 570px;
+}
+.cardio17 .form--landing {
+    top: 154px;
+    right: 182px;
+}
+.cardio17__title {
+    padding: 30px 65px 0 0;
+    font-size: 24px;
+    line-height: 41px;
+    letter-spacing: 0;
+    text-align: center;
+}
+.cardio17__title .t-bold {
+    font-size: 40px;
+    color: #bb2424;
+}
+.landing-form-21__img {
+    background-color: #f1f1f1;
+}
+.landing-form-21__img img {
+    object-fit: contain;
+    width: 100%
+}
+table {
+    border-collapse: collapse;
+}
